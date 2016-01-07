@@ -17,35 +17,66 @@
 # Pages such as community.md use this data.
 # Please keep the list in alphabetical order.
 #
-- name: DB Tsai
-  apacheId: dbtsai
-  githubId: dbtsai
-  role: PMC
-  org: Netflix
 
-- name: Julian Hyde
-  apacheId: jhyde
-  githubId: julianhyde
+- name: Corey Stubbs
+  apacheId: TBD
+  githubId: Lull3rSkat3r
+  role: PMC
+  org: IBM
+
+- name: Hitesh Shah
+  apacheId: hitesh
+  githubId: hiteshs
+  role: Mentor
   org: Hortonworks
-  role: Contributor
-  homepage: http://people.apache.org/~jhyde
+
+- name: Jakob Odersky
+  apacheId: TBD
+  githubId: jodersky
+  role: PMC
+  org: IBM
+
+- name: Julien Le Dem
+  apacheId: julien
+  githubId: julienledem
+  role: Mentor
+  org: Dremio
+
+- name: Leugim Bustelo
+  apacheId: TBD
+  githubId: lbustelo
+  role: PMC
+  org: IBM
 
 - name: Luciano Resende
   apacheId: lresende
   githubId: lresende
   org: IBM
-  role: Committer and Mentor
+  role: PMC and Mentor
+
+- name: Miao Wang
+  apacheId: TBD
+  githubId: wangmiao1981
+  org: IBM
+  role: PMC
 
 - name: Reynold Xin
   apacheId: rxin
   githubId: rxin
   org: Databricks
-  role: Committer and Mentor
-
-- name: Rich Bowen
-  apacheId: rbowen
-  githubId: rbowen
-  org:
   role: Mentor
+
+- name: Robert Senkbeil
+  apacheId: TBD
+  githubId: chipsenkbeil
+  role: PMC
+  org: IBM
+
+
+- name: Sean Welleck
+  apacheId: TBD
+  githubId: swelleck
+  org: IBM
+  role: PMC
 
 # End contributors.yml
