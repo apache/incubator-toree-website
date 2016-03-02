@@ -1,0 +1,82 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to you under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# Database of contributors to Apache Foo.
+# Pages such as community.md use this data.
+# Please keep the list in alphabetical order.
+#
+
+- name: Corey Stubbs
+  apacheId: cstubbs
+  githubId: Lull3rSkat3r
+  role: PMC
+  org: IBM
+
+- name: Hitesh Shah
+  apacheId: hitesh
+  githubId: hiteshs
+  role: Mentor
+  org: Hortonworks
+
+- name: Jakob Odersky
+  apacheId: TBD
+  githubId: jodersky
+  role: PMC
+  org: IBM
+
+- name: Julien Le Dem
+  apacheId: julien
+  githubId: julienledem
+  role: Mentor
+  org: Dremio
+
+- name: Leugim Bustelo
+  apacheId: lbustelo
+  githubId: lbustelo
+  role: PMC
+  org: IBM
+
+- name: Luciano Resende
+  apacheId: lresende
+  githubId: lresende
+  org: IBM
+  role: PMC and Mentor
+
+- name: Miao Wang
+  apacheId: TBD
+  githubId: wangmiao1981
+  org: IBM
+  role: PMC
+
+- name: Reynold Xin
+  apacheId: rxin
+  githubId: rxin
+  org: Databricks
+  role: Mentor
+
+- name: Robert "Chip" Senkbeil
+  apacheId: chipsenkbeil
+  githubId: chipsenkbeil
+  role: PMC
+  org: IBM
+
+
+- name: Sean Welleck
+  apacheId: TBD
+  githubId: wellecks
+  org: IBM
+  role: PMC
+
+# End contributors.yml

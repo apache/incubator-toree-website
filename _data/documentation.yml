@@ -13,11 +13,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-.idea
-.sass-cache
-.jekyll-metadata
-*.iml
-*~
-Gemfile.lock
-_site/
+
+- section_name: "User"
+  section_id: "user"
+  section_url: "/documentation/user/quick-start"
+
+- section_name: "Developer"
+  section_id: "developer"
+  section_url: "/documentation/developer/contributing-to-the-project"
+
+- section_name: "References"
+  section_id: "references"
+  section_url: "/documentation/references/scaladocs"
 

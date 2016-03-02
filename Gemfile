@@ -13,11 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-.idea
-.sass-cache
-.jekyll-metadata
-*.iml
-*~
-Gemfile.lock
-_site/
-
+source 'https://rubygems.org'
+gem 'github-pages'
+gem 'rouge'
+gem 'jekyll-oembed', :require => 'jekyll_oembed'
+gem 'redcarpet'
+# End Gemfile

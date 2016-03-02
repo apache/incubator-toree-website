@@ -13,11 +13,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-.idea
-.sass-cache
-.jekyll-metadata
-*.iml
-*~
-Gemfile.lock
-_site/
+
+# Site settings
+title: Apache Toree (incubating)
+email: dev@toree.incubator.apache.org
+description: > # ignores newlines until baseurl:
+    Apache Toree (incubating) is a multi-language gateway to use Apache Spark.
+baseurl: ""
+url: "https://toree.apache.org"
+github_username: apache
+
+# Build settings
+markdown: kramdown
+kramdown:
+    auto_ids: true
+    input: GFM
+    hard_wrap: false
 
