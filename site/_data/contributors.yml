@@ -19,7 +19,7 @@
 #
 
 - name: Corey Stubbs
-  apacheId: TBD
+  apacheId: cstubbs
   githubId: Lull3rSkat3r
   role: PMC
   org: IBM
@@ -31,7 +31,7 @@
   org: Hortonworks
 
 - name: Jakob Odersky
-  apacheId: TBD
+  apacheId: jodersky
   githubId: jodersky
   role: PMC
   org: IBM
@@ -43,7 +43,7 @@
   org: Dremio
 
 - name: Leugim Bustelo
-  apacheId: TBD
+  apacheId: lbustelo
   githubId: lbustelo
   role: PMC
   org: IBM
@@ -67,7 +67,7 @@
   role: Mentor
 
 - name: Robert Senkbeil
-  apacheId: TBD
+  apacheId: chipsenkbeil
   githubId: chipsenkbeil
   role: PMC
   org: IBM
