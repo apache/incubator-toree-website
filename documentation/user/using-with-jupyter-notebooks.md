@@ -12,8 +12,5 @@ tagline: Apache Project !
 - Create a notebook with Toree
 - Intro to magics
 - Intro to kernel API
-- How Tos
-    - How to add a jar
-    - How to add a library
-    - How to access Apache Spark
+
 
