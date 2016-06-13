@@ -80,7 +80,9 @@ on full configurables, see '--help-all'.
 
 # Configuring Spark
 
-There are two options for setting configuration options for Spark. 
+Toree is started using the `spark-submit` script. All configuration options from Spark are consistent with configuring
+a [Spark Submit](http://spark.apache.org/docs/latest/submitting-applications.html) job. There are two ways of 
+setting configuration options for Spark. 
 
 The first is at install time with the `--spark_opts` command line option.
 
@@ -95,6 +97,46 @@ SPARK_OPTS='--master=local[4]' jupyter notebook
 ```
 
 __Note:__ There is an order of precedence to the configuration options. `SPARK_OPTS` will overwrite any values configured in `--spark_opts`.
+
+
+# Configuring Toree
+
+There are some configuration options that are specific to Toree. 
+
+```
+Option                               Description                          
+------                               -----------                                     
+--default-interpreter                default interpreter for the kernel   
+--default-repositories               comma seperated list of additional   
+                                       repositories to resolve            
+--default-repository-credentials     comma seperated list of credential   
+                                       files to use                       
+-h, --help                           display help information                      
+--interpreter-plugin                                                                                       ip used to bind sockets              
+--jar-dir                            directory where user added jars are  
+                                       stored (MUST EXIST)                
+--magic-url                          path to a magic jar                  
+--max-interpreter-threads <Integer>  total number of worker threads to use
+                                       to execute code                    
+--nosparkcontext                     kernel should not create a spark context                                         
+-v, --version                        display version information 
+```
+
+There are two way of setting these configuration options. 
+
+The first is at install time with the `--toree_opts` command line option.
+
+```
+jupyter toree instal --toree_opts='--nosparkcontext'
+```
+
+The second option is configured at run time through the `TOREE_OPTS` environment variable.
+
+```
+TOREE_OPTS='--nosparkcontext' jupyter notebook 
+```
+
+__Note:__ There is an order of precedence to the configuration options. `TOREE_OPTS` will overwrite any values configured in `--toree_opts`.
 
 
 ## Installing Multiple Kernels
