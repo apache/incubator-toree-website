@@ -1,11 +1,24 @@
-default: build
+DEV_IMAGE=apache/toree-website
 
-dep:
-	bundle install
+default: run
 
-build: dep
-	bundle exec jekyll build
+build: .dev-image
 
 run:
-	bundle exec jekyll serve
+	@docker run -it \
+			-p 4000:4000 \
+  		-v `pwd`:/src \
+  		--workdir /src \
+  		$(DEV_IMAGE) bash -c 'bundle exec jekyll build && bundle exec jekyll serve --host 0.0.0.0 --watch'
+
+.dev-image:
+	@-docker rm -f image$@
+	@docker run -it \
+		-v `pwd`:/src \
+		--workdir /src \
+		--name image$@ \
+		ruby:2.1 bash -c 'bundle install'
+	@docker commit image$@ $(DEV_IMAGE)
+	@-docker rm -f image$@
+	touch $@
 
