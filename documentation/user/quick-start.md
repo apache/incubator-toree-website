@@ -40,12 +40,12 @@ jupyter notebook
 The following clip shows a simple notebook running Scala code to print `Hello, World!`. Each of the code cells can be
 run by pressing `Shift-Enter` on your keyboard.
 
-<img src="/assets/image/toree-quick-start-notebook.gif" alt="Drawing" style="width: 100%;"/>
+<img src="/assets/images/toree-quick-start-notebook.gif" alt="Drawing" style="width: 100%;"/>
 
 A key component to Apache Toree is that is will automatically create a `SparkContext` binding for you. This can be accessed
 through the variable `sc`. The following clip shows code accessing the `SparkContext` and returning a value.
 
-<img src="/assets/image/toree-quick-start-spark.gif" alt="Drawing" style="width: 100%;"/>
+<img src="/assets/images/toree-quick-start-spark.gif" alt="Drawing" style="width: 100%;"/>
 
 
 ## Where to try Apache Toree?

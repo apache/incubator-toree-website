@@ -20,4 +20,6 @@
 *~
 Gemfile.lock
 _site/
+.dev-image
+toree-site/
 
