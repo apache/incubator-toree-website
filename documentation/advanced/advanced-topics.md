@@ -2,7 +2,7 @@
 layout: docpage
 title: Advanced Topics
 type: doc
-section: user
+section: advanced
 weight: 60
 tagline: Apache Project !
 ---
@@ -11,3 +11,4 @@ tagline: Apache Project !
 
 - Comm API
 
+{% include_relative sharing-spark-context.md %}

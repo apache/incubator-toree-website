@@ -7,32 +7,32 @@ weight: 0
 tagline: Apache Project !
 ---
 
-The Spark Kernel provides a pluggable interface for magics that allows
-developers to write their own magics. This guide will focus on the technical details of implementing your own magics; for an introduction and conceptual overview of magics, see [Overview of Magics for the Spark Kernel](https://github.com/ibm-et/spark-kernel/wiki/Overview-of-Magics-for-the-Spark-Kernel).
+Apache Toree provides a pluggable interface for magics that allows
+developers to write their own magics. This guide will focus on the technical details of implementing your own magics; for an introduction and conceptual overview of magics, see [Overview of Magics for Toree](overview-of-magics).
 
 In this guide we'll look at the dependencies required to develop a magic, walk through creating a line magic and a cell magic, and discuss some useful magic features.
 
 ### Dependencies ###
 
-In order to write a magic, you need to add the _kernel-api_ and _protocol_ 
-modules of the Spark Kernel to your project.
+In order to write a magic, you need to add the _kernel-api_ and _protocol_
+modules of Apache Toree to your project.
 
 In _sbt_, you can add the following lines:
 
     libraryDependencies ++= Seq(
-        "com.ibm.spark" %% "kernel-api" % "0.1.1-SNAPSHOT",
-        "com.ibm.spark" %% "protocol" % "0.1.1-SNAPSHOT"
+        "org.apache.toree" %% "kernel-api" % "0.1.0,
+        "org.apache.toree" %% "protocol" % "0.1.0"
     )
 
 As the modules are not hosted on any repository, you will also need to build
-and publish them locally. From the root of the Spark Kernel, you can execute
-the following to compile and make available the Spark Kernel modules:
+and publish them locally. From the root of Apache Toree, you can execute
+the following to compile and make available the Apache Toree modules:
 
     sbt compile && sbt publishLocal
 
 ## Developing Magics
 
-A magic is implemented by extending either the ```LineMagic``` or ```CellMagic``` trait provided by the Spark Kernel. Each trait consists of a single function, ```execute```, that defines the magic's functionality.
+A magic is implemented by extending either the ```LineMagic``` or ```CellMagic``` trait provided by Apache Toree. Each trait consists of a single function, ```execute```, that defines the magic's functionality.
 
 ### Developing a Line Magic ###
 
@@ -61,7 +61,7 @@ kernel.magics.helloLineMagic("foo bar")
 Behind the scenes, the ```execute``` method of ```HelloLineMagic``` gets called with ```"foo bar"``` as input.
 
 ### Developing a Cell Magic ###
-A cell magic receives an entire cell of code as input and returns a mapping of MIME types to data. This mapping, defined by the type ```CellMagicOutput```, can be used to distinguish different data types produced by the magic. In an IPython setting, the ```CellMagicOutput``` mapping will influence the way a cell is rendered. 
+A cell magic receives an entire cell of code as input and returns a mapping of MIME types to data. This mapping, defined by the type ```CellMagicOutput```, can be used to distinguish different data types produced by the magic. In an IPython setting, the ```CellMagicOutput``` mapping will influence the way a cell is rendered.
 
 #### An HTML Cell Magic ###
 As a concrete example, we'll develop an ```HTML``` cell magic that causes a cell to render its contents as HTML.
@@ -70,8 +70,8 @@ To create a cell magic, we extend the `CellMagic` trait, and override its `execu
 
 ```scala
     class Html extends CellMagic {
-        override def execute(code: String): CellMagicOutput = { 
-          // TODO 
+        override def execute(code: String): CellMagicOutput = {
+          // TODO
         }
     }
 ```
@@ -80,7 +80,7 @@ In this case, we want to package the code that the magic receives as HTML. To do
 
 ```scala
     class Html extends CellMagic {
-        override def execute(code: String): CellMagicOutput = { 
+        override def execute(code: String): CellMagicOutput = {
           CellMagicOutput(MIMEType.TextHtml -> code)
         }
     }
@@ -119,7 +119,7 @@ class HelloParsing extends LineMagic with ArgumentParsingSupport {
                     .withOptionalArg()
                     .ofType(classOf[Boolean])
                     .defaultsTo(true)
-   
+
    override def execute(code: String): LineMagicOutput = {
       val args = parseArgs(code)
       if (args(0)) // do something
@@ -171,8 +171,8 @@ should become
     }
 ```
 
-### Adding an external magic to the Spark Kernel ###
-In order to use an external magic we first need a `.jar` containing a magic in the `com.ibm.spark.magic.builtin` package. Assuming we have such a `.jar` at location `/src/path/to/my/exampleMagic.jar` the `kernel.json` file needs to be changed to supply the path to the external magic. The command-line argument we need to add is `--magic-url` which takes a string:
+### Adding an external magic to Apache Toree ###
+In order to use an external magic we first need a `.jar` containing a magic in the `org.apache.toree.magic.builtin` package. Assuming we have such a `.jar` at location `/src/path/to/my/exampleMagic.jar` the `kernel.json` file needs to be changed to supply the path to the external magic. The command-line argument we need to add is `--magic-url` which takes a string:
 
 ```json
 {
@@ -197,4 +197,4 @@ For some example implementations, check out the ```com.ibm.spark.magic.builtin``
 
 ### Other Notes ###
 
-There is a limitation with the current magic implementation that will force magic invocations to be case sensitive unless defined in the package _com.ibm.spark.magic.builtin_.
+There is a limitation with the current magic implementation that will force magic invocations to be case sensitive unless defined in the package _org.apache.toree.magic.builtin_.
