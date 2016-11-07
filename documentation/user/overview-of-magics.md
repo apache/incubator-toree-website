@@ -3,7 +3,7 @@ layout: docpage
 title: Overview of Magics
 type: doc
 section: quick-start
-weight: 0
+weight: 30
 tagline: Apache Project !
 ---
 
@@ -32,13 +32,13 @@ import com.google.common.base.Strings._
 ```
 
 ### Other Things to Note
-- Magic names are case insensitive; if a line magic `AddJar` exists, then `%addjar`, `%ADDJar`, and all other variants are valid. 
+- Magic names are case insensitive; if a line magic `AddJar` exists, then `%addjar`, `%ADDJar`, and all other variants are valid.
 
 - Each magic has its own arguments; usage information can be obtained for a magic by typing `%<MagicName>`.
 
 - Line magics receive the _literal_ rest of the line as arguments, so the following string interpolation will not work:
 ```scala
-for(i <- (1 to 10)) 
+for(i <- (1 to 10))
   %addDeps s"com.google.guava guava $i"
 ```
 
@@ -57,7 +57,7 @@ As an example, the `%%HTML` cell magic renders the contents of the cell as HTML:
 # Programmatic Magic Usage
 
 ### Description
-There exists a programmatic API for those who do not wish to use the IPython-esque `%` and `%%` syntax. The Spark Kernel exposes a `kernel` object which provides programmatic invocation of magic code in the form:
+There exists a programmatic API for those who do not wish to use the IPython-esque `%` and `%%` syntax. Apache Toree exposes a `kernel` object which provides programmatic invocation of magic code in the form:
 ```scala
 //magicName is case insensitive
 kernel.magics.<magicName>("<string of args>")

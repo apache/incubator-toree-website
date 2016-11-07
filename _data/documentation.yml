@@ -18,6 +18,10 @@
   section_id: "user"
   section_url: "/documentation/user/quick-start"
 
+- section_name: "User -- Advanced Topics"
+  section_id: "advanced"
+  section_url: "/documentation/advanced/advanced-topics"
+
 - section_name: "Developer"
   section_id: "developer"
   section_url: "/documentation/developer/contributing-to-the-project"
@@ -25,4 +29,3 @@
 - section_name: "References"
   section_id: "references"
   section_url: "/documentation/references/scaladocs"
-

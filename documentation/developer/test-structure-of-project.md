@@ -2,12 +2,12 @@
 layout: docpage
 title: Test Structure of Project
 type: doc
-section: quick-start
+section: developer
 weight: 0
 tagline: Apache Project !
 ---
 
-### Prerequisites 
+### Prerequisites
 
 You must install the [library dependencies][1] to properly run the tests.
 

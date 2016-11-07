@@ -2,7 +2,7 @@
 layout: docpage
 title: Development Workflow
 type: doc
-section: quick-start
+section: developer
 weight: 0
 tagline: Apache Project !
 ---
@@ -25,7 +25,7 @@ information about compiling/testing in the main RAEDME.
 ### Building IntelliJ Project ###
 
 To build the IntelliJ project using _sbt_, you can trigger the plugin by
-executing the following from the root of the Apache Toree project:
+executing the following from the root of the project:
 
     sbt gen-idea
 
@@ -43,8 +43,7 @@ typically master). For this example, let's call the branch
 "AddHelloWorldDuringBoot" and use it for our feature.
 
 Once development has finished, it is good practice to ensure that all tests
-are still passing. To do this, run `sbt test` from the root of the Apache Toree
-project.
+are still passing. To do this, run `sbt test` from the root of project.
 
 If everything passes, we want to ensure that our branch is up-to-date with the
 latest code in the kernel. So, move back to the development branch (master in
