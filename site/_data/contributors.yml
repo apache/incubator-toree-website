@@ -54,6 +54,12 @@
   org: IBM
   role: PMC and Mentor
 
+- name: Marius van Niekerk
+  apacheId: mariusvniekerk
+  githubId: mariusvniekerk
+  org: Independent
+  role: PMC
+
 - name: Miao Wang
   apacheId: TBD
   githubId: wangmiao1981
@@ -71,7 +77,6 @@
   githubId: chipsenkbeil
   role: PMC
   org: IBM
-
 
 - name: Sean Welleck
   apacheId: TBD
