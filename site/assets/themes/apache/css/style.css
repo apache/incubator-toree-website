@@ -7,7 +7,7 @@ body {
 }
 
 .jumbotron {
-    background-color: #3071a9;
+    background-color: #222222;
 }
 
 .navbar-brand {
@@ -17,29 +17,29 @@ body {
 }
 
 .navbar {
- background-color:#3071a9;
+ background-color:#222222;
  border-bottom:0px;
  height: 50px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
  color: #ffffff;
- background-color:#3071a9;
+ background-color:#222222;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover, 
+.navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #ffffff;
-  background-color: #2C6094;
+  background-color: ##222222;
 }
-.navbar-inverse .navbar-nav > li > a.active:hover, 
+.navbar-inverse .navbar-nav > li > a.active:hover,
 .navbar-inverse .navbar-nav > li > a.active:focus {
   text-decoration: none;
-  background-color: #265380;
+  background-color: #222222;
 }
 
 .navbar-inverse .navbar-nav > li > a.active {
-  background-color: #265380;
+  background-color: #222222;
 }
 
 .navbar-inverse .navbar-brand:hover,
@@ -54,8 +54,8 @@ body {
 
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  border-color: #265380;
-  background-color: #3071a9;
+  border-color: #222222;
+  background-color: #222222;
 }
 
 @media (max-width: 768px) {
@@ -76,13 +76,13 @@ body {
 }
 
 .navbar-inverse .navbar-toggle {
-  border-color: #265380;
+  border-color: #222222;
 }
 
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  border-color: #265380;
-  background-color: #265380;
+  border-color: #222222;
+  background-color: #222222;
 }
 
 .navbar-inverse .navbar-toggle:focus {
@@ -220,14 +220,6 @@ body {
     transform: rotate(270deg);
 }
 
-
-
-
-
-
-
-
-
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
@@ -320,10 +312,10 @@ body {
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
   color: #ffffff;
-  background-color: #286090;
+  background-color: ##222222;
 }
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (max-width : 480px) {
   .jumbotron h1 {
     display: none;
