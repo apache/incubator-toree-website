@@ -30,7 +30,7 @@ limitations under the License.
 ### {{ site.data.project.short_name }} Team Members
 
 {% if site.data.contributors %}
-<table class="table table-hover">
+<table class="table table-hover sortable">
     <tr>
         <th><b></b></th><th><b>Full Name</b></th><th><b>Apache ID</b></th><th><b>GitHub</b></th><th><b>Role</b></th><th><b>Affiliation</b></th>
     </tr>

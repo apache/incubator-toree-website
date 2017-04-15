@@ -73,6 +73,19 @@ body {
 
 .bigFingerButton {
     margin-right: 10px;
+    border-color: #ffffff;
+    background-color: #222222;
+}
+
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #000000;
 }
 
 .navbar-inverse .navbar-toggle {
