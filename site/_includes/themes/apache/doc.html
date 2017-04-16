@@ -1,0 +1,13 @@
+<!--<div class="hero-unit {{ page.title | lowercase }}">
+  <h1>{% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+</div>
+-->
+
+<div class="row">
+    <div class="col-md-3" role="complementary">
+        {% include themes/apache/_navigation_doc.html %}
+    </div>
+    <div class="col-md-9" role="main">
+        {{ content }}
+    </div>
+</div>

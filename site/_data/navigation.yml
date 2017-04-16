@@ -15,6 +15,15 @@
 
 topnav:
 
+- title: Documentation
+  subcategories:
+  - title: User
+    url: /docs/current/user/quick-start
+  - title: Deveveloper
+    url: /docs/current/developer/contributing-to-the-project
+  - title: References
+    url: /docs/current/references/scaladocs
+
 - title: Community
   subcategories:
   - title: Get Involved
