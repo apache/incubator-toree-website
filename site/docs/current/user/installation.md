@@ -11,13 +11,13 @@ tagline: Apache Project !
 
 # Installation
 
-## Setup 
+## Setup
 
 An Apache Spark distribution is required to be installed before installing Apache Toree. You can download a copy of Apache Spark [here](http://spark.apache.org/downloads.html). Throughout the rest of this guide we will assume you have downloaded and extracted the Apache Spark distribution to `/usr/local/bin/apache-spark/`.
 
 ## Installing Toree via Pip
 
-The quickest way to install Apache Toree is through the toree pip package. 
+The quickest way to install Apache Toree is through the toree pip package.
 
 ```
 pip install toree
@@ -81,8 +81,8 @@ on full configurables, see '--help-all'.
 # Configuring Spark
 
 Toree is started using the `spark-submit` script. All configuration options from Spark are consistent with configuring
-a [Spark Submit](http://spark.apache.org/docs/latest/submitting-applications.html) job. There are two ways of 
-setting configuration options for Spark. 
+a [Spark Submit](http://spark.apache.org/docs/latest/submitting-applications.html) job. There are two ways of
+setting configuration options for Spark.
 
 The first is at install time with the `--spark_opts` command line option.
 
@@ -93,7 +93,7 @@ jupyter toree instal --spark_opts='--master=local[4]'
 The second option is configured at run time through the `SPARK_OPTS` environment variable.
 
 ```
-SPARK_OPTS='--master=local[4]' jupyter notebook 
+SPARK_OPTS='--master=local[4]' jupyter notebook
 ```
 
 __Note:__ There is an order of precedence to the configuration options. `SPARK_OPTS` will overwrite any values configured in `--spark_opts`.
@@ -101,28 +101,33 @@ __Note:__ There is an order of precedence to the configuration options. `SPARK_O
 
 # Configuring Toree
 
-There are some configuration options that are specific to Toree. 
+There are some configuration options that are specific to Toree.
 
 ```
-Option                               Description                          
-------                               -----------                                     
---default-interpreter                default interpreter for the kernel   
---default-repositories               comma seperated list of additional   
-                                       repositories to resolve            
---default-repository-credentials     comma seperated list of credential   
-                                       files to use                       
--h, --help                           display help information                      
---interpreter-plugin                                                                                       ip used to bind sockets              
---jar-dir                            directory where user added jars are  
-                                       stored (MUST EXIST)                
---magic-url                          path to a magic jar                  
---max-interpreter-threads <Integer>  total number of worker threads to use
-                                       to execute code                    
---nosparkcontext                     kernel should not create a spark context                                         
--v, --version                        display version information 
+Option                                             Description
+------                                             -----------
+--default-interpreter                              default interpreter for the kernel
+--default-repositories                             comma separated list of additional
+                                                     repositories to resolve
+--default-repository-credentials                   comma separated list of credential
+                                                     files to use
+-h, --help                                         display help information
+--interpreter-plugin
+--ip                                               used to bind sockets
+--jar-dir                                          directory where user added jars are
+                                                     stored (MUST EXIST)
+--magic-url                                        path to a magic jar
+--max-interpreter-threads <Integer>                total number of worker threads to use
+                                                     to execute code
+--spark-context-initialization-timeout <Long>      number of milliseconds allowed for
+                                                     creation of the spark context; default
+                                                     is 100 milliseconds
+--nosparkcontext                                   kernel should not create a spark
+                                                     context
+-v, --version                                      display version information
 ```
 
-There are two way of setting these configuration options. 
+There are two way of setting these configuration options.
 
 The first is at install time with the `--toree_opts` command line option.
 
@@ -133,7 +138,7 @@ jupyter toree instal --toree_opts='--nosparkcontext'
 The second option is configured at run time through the `TOREE_OPTS` environment variable.
 
 ```
-TOREE_OPTS='--nosparkcontext' jupyter notebook 
+TOREE_OPTS='--nosparkcontext' jupyter notebook
 ```
 
 __Note:__ There is an order of precedence to the configuration options. `TOREE_OPTS` will overwrite any values configured in `--toree_opts`.
@@ -158,8 +163,8 @@ The available interpreters and their supported languages are:
 | SQL      | Spark SQL            | SQL                              |
 
 ### Interpreter Requirements
-* R version 3.2+ 
-* Make sure that the packages directory used by R when installing packages is writable, necessary to installed modified SparkR library. This is done automatically before any R code is run. 
+* R version 3.2+
+* Make sure that the packages directory used by R when installing packages is writable, necessary to installed modified SparkR library. This is done automatically before any R code is run.
 
 If the package directory is not writable by the Apache Toree, then you should see an error similar to the following:
 
@@ -172,4 +177,3 @@ Error in install.packages("sparkr_bundle.tar.gz", repos = NULL, type = "source")
 unable to install packages
 Execution halted
 ```
-
