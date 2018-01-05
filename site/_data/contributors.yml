@@ -34,7 +34,7 @@
   apacheId: jodersky
   githubId: jodersky
   role: PMC
-  org: IBM
+  org: Driver
 
 - name: Julien Le Dem
   apacheId: julien
@@ -63,7 +63,7 @@
 - name: Miao Wang
   apacheId: mwangcse
   githubId: wangmiao1981
-  org: IBM
+  org: Alibaba.com
   role: PMC
 
 - name: Reynold Xin
@@ -76,12 +76,12 @@
   apacheId: chipsenkbeil
   githubId: chipsenkbeil
   role: PMC
-  org: IBM
+  org: Facebook
 
 - name: Sean Welleck
   apacheId: TBD
   githubId: wellecks
-  org: IBM
+  org: Independent
   role: PMC
 
 # End contributors.yml
