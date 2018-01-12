@@ -122,6 +122,10 @@ Option                                             Description
 --spark-context-initialization-timeout <Long>      number of milliseconds allowed for
                                                      creation of the spark context; default
                                                      is 100 milliseconds
+--alternate-sigint  <String>                       specifies the signal to use instead of SIGINT
+                                                     for interrupting a long-running cell; value
+                                                     does not include the SIG prefix; use of
+                                                     USR2 is recommended
 --nosparkcontext                                   kernel should not create a spark
                                                      context
 -v, --version                                      display version information
