@@ -20,7 +20,7 @@ short_name: Toree
 unix_name: toree
 incubator_name: incubator-toree
 incubator_slash_name: incubator/toree
-description: Toree provides applications with a mechanism to interactively and remotely access Apache Spark.
+description: Toree is a kernel for the Jupyter Notebook platform providing interactively access to Apache Spark.
 
 download: /download
 latest_release: 0.1.0-incubating
