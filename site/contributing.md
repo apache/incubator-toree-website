@@ -56,7 +56,7 @@ The process to propose a doc change is otherwise the same as the process for pro
 Please review the preceding section before proposing a code change. This section documents how to do so:
 
 
-<img src='https://developer.atlassian.com/s/en_GB/5989/aaad9997c145089d7f38b9dea0ac5b91728ef55a.56/_/images/icons/emoticons/check.png'> **When you contribute code, you affirm that the contribution is your original work and that you license the work to the project under the project's open source license. Whether or not you state this explicitly, by submitting any copyrighted material via pull request, email, or other means you agree to license the material under the project's open source license and warrant that you have the legal authority to do so.**
+<img src='/assets/images/important.png' height="22" width="22">  **When you contribute code, you affirm that the contribution is your original work and that you license the work to the project under the project's open source license. Whether or not you state this explicitly, by submitting any copyrighted material via pull request, email, or other means you agree to license the material under the project's open source license and warrant that you have the legal authority to do so.**
 
 
 
