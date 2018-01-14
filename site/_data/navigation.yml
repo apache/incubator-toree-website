@@ -28,6 +28,8 @@ topnav:
   subcategories:
   - title: Get Involved
     url: /community
+  - title: Contributing
+    url: /contributing
   - title: Project Committers
     url: /community-members
 
