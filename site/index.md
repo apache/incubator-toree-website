@@ -26,12 +26,50 @@ limitations under the License.
 
 ## Apache Toree
 
-Apache Toree is a kernel for the Jupyter Notebook platform providing interactively access to Apache Spark. It has been developed using the IPython protocol, and despite the protocol’s name, the apache Toree currently exposes the Spark programming model in Scala, Python and R languages.
+Apache Toree is a kernel for the Jupyter Notebook platform providing interactively access to Apache Spark. It has been developed using the IPython messaging protocol and 0MQ, and despite the protocol’s name, the apache Toree currently exposes the Spark programming model in Scala, Python and R languages.
 
-Toree supports a number of types of interactions. In one common case, applications send snippets of code which are then executed by Spark, and the results are returned directly to the application. This style of interaction is what users of Notebooks experience when they evaluate code in cells. Instead of sending raw code, an application can send magics, which might be commands to add a JAR to the Spark execution context or a call to execute a shell command such as “ls”. Toree provides a well-defined mechanism to associate functionality with magics, and this is a useful point of extensibility of the system.
+### Use Cases
 
-<img src='/assets/images/toree-basic-scenario.png' height="50%" width="50%">
+Toree supports a number of interaction scenarios. In one common case, applications send snippets of code which are then executed by Spark, and the results are returned directly to the application. This style of interaction is what users of Notebooks experience when they evaluate code in cells. Instead of sending raw code, an application can send magics, which might be commands to add a JAR to the Spark execution context or a call to execute a shell command such as “ls”. Toree provides a well-defined mechanism to associate functionality with magics, and this is a useful point of extensibility of the system.
+
+<div align="center">
+  <img class="center-block" src="/assets/images/toree-scenario.png" height="75%" width="75%">
+</div>
+
+<br/>
 
 Applications wanting to work with Spark can be located remotely from a Spark cluster and use a Apache Toree Client or Jupyter Client to communicate with a Apache Toree Server running on the cluster, or they can communicate directly with the Apache Toree Server. Multiple clients/applications can communicate with a single Kernel which contains a Spark application context, and this provides a simple form of multi-tenancy.
 
-<img src='/assets/images/toree-application-scenario.png' height="50%" width="50%">
+
+### Visualizations
+
+Apache Toree, via extensions like [Brunel for Apache Toree](https://github.com/Brunel-Visualization/Brunel/tree/master/spark-kernel),
+supports rich visualizations that integrates directly with Spark Data Frame APIs
+
+<div align="center">
+  <img src="/assets/images/toree-vizualization-brunel.png" height="75%" width="75%">
+</div>
+
+<br/>
+<div align="center">
+   <img src='http://blog.ibmjstart.net/wp-content/uploads/2016/07/vis-comparision1.png'>
+</div>
+
+<br/>
+
+
+### Magics
+
+Apache Toree provides a set of magics that enhances the user experience manipulating data coming from Spark tables or data
+
+
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-6">
+         <img src="/assets/images/toree-magic-sql.png" height="100%" width="100%">
+        </div>
+        <div class="col-md-6">
+          <img src="/assets/images/toree-magic-dataframe.png" height="100%" width="100%">
+        </div>
+    </div>
+</div>
