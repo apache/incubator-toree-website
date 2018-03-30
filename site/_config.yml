@@ -13,11 +13,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
 markdown: kramdown
 permalink: /news/:year/:month/:day/:title/
 excerpt_separator: ""
 
-repository: https://github.com/apache/apache-website-template
+# if 'analytics_on' is true, analytics section will be rendered on the HTML pages
+analytics_on: true
+analytics_provider: google_universal
+analytics_google_universal_tracking_id : UA-116672460-1
+
+repository: https://github.com/apache/incubator-toree-website
 destination: target
 exclude: [README.md,Gemfile*]
 keep_files: [".git", ".svn", "apidocs"]
