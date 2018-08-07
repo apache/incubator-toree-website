@@ -26,7 +26,7 @@ limitations under the License.
 
 ## Apache Toree
 
-Apache Toree is a kernel for the Jupyter Notebook platform providing interactively access to Apache Spark. It has been developed using the IPython messaging protocol and 0MQ, and despite the protocol’s name, the apache Toree currently exposes the Spark programming model in Scala, Python and R languages.
+Apache Toree is a kernel for the Jupyter Notebook platform providing interactive access to Apache Spark. It has been developed using the IPython messaging protocol and 0MQ, and despite the protocol’s name, the apache Toree currently exposes the Spark programming model in Scala, Python and R languages.
 
 ### Use Cases
 
