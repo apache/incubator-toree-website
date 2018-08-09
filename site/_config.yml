@@ -25,7 +25,7 @@ analytics_google_universal_tracking_id : UA-116672460-1
 
 repository: https://github.com/apache/incubator-toree-website
 destination: target
-exclude: [README.md,Gemfile*]
+exclude: [README.md,Gemfile*,vendor]
 keep_files: [".git", ".svn", "apidocs"]
 
 # The base path where the website is deployed
