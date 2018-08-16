@@ -15,6 +15,9 @@
 
 topnav:
 
+- title: Download
+  url: /download
+
 - title: Documentation
   subcategories:
   - title: User
