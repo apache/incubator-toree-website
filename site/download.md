@@ -26,9 +26,9 @@ limitations under the License.
 
 ## {{ site.data.project.name }} Downloads
 
-{{ site.data.project.name }} is released as a source artifact, and also through Maven.
+{{ site.data.project.name }} is released as a source and binary artifacts, and also through PyPi.
 
-### Source releases
+### Release Artifacts
 
 
 <table class="table table-hover sortable">
@@ -36,32 +36,28 @@ limitations under the License.
         <tr>
             <th><b>Name</b></th>
             <th><b>Archive</b></th>
-            <th><b>MD5</b></th>
-            <th><b>SHA-1</b></th>
-            <th><b>signature</b></th>
+            <th><b>SHA-512</b></th>
+            <th><b>Signature</b></th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>{{ site.data.project.name }} {{site.data.project.latest_release}} (tar.gz)</td>
-            <td><a href="http://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-bin/apache-toree-{{site.data.project.latest_release}}-binary-release.tar.gz">tar.gz</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-bin/apache-toree-{{site.data.project.latest_release}}-binary-release.tar.gz.md5">MD5</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-bin/apache-toree-{{site.data.project.latest_release}}-binary-release.tar.gz.sha">SHA-1</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-bin/apache-toree-{{site.data.project.latest_release}}-binary-release.tar.gz.asc">ASC</a></td>
+            <td><a href="http://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz">tar.gz</a></td>
+            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz.sha512">SHA-512</a></td>
+            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz.asc">ASC</a></td>
         </tr>
         <tr>
             <td>{{ site.data.project.name }} {{site.data.project.latest_release}} (pip tar.gz)</td>
-            <td><a href="http://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/apache-toree-{{site.data.project.pip_latest_release}}.tar.gz">tar.gz</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/apache-toree-{{site.data.project.pip_latest_release}}.tar.gz.md5">MD5</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/apache-toree-{{site.data.project.pip_latest_release}}.tar.gz.sha">SHA-1</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/apache-toree-{{site.data.project.pip_latest_release}}.tar.gz.asc">ASC</a></td>
+            <td><a href="http://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz">tar.gz</a></td>
+            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz.sha512">SHA-512</a></td>
+            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz.asc">ASC</a></td>
         </tr>
         <tr>
             <td>{{ site.data.project.name }} {{site.data.project.latest_release}} (source tar.gz)</td>
-            <td><a href="http://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-src/apache-toree-{{site.data.project.latest_release}}-source-release.tar.gz">tar.gz</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-src/apache-toree-{{site.data.project.latest_release}}-source-release.tar.gz.md5">MD5</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-src/apache-toree-{{site.data.project.latest_release}}-source-release.tar.gz.sha">SHA-1</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-src/apache-toree-{{site.data.project.latest_release}}-source-release.tar.gz.asc">ASC</a></td>
+            <td><a href="http://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz">tar.gz</a></td>
+            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz.sha512">SHA-512</a></td>
+            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz.asc">ASC</a></td>
         </tr>
         <!--tr>
             <td>Release Notes</td>
@@ -73,12 +69,10 @@ limitations under the License.
     </tbody>
 </table>
 
-You can also retrieve the source files from our git repository by typing:
+You can also install Apache Toree directly from PyPI:
 
 <pre>
-git clone {{site.data.project.source_repository_mirror}}
-cd {{site.data.project.github_project_name}}
-git checkout -b tags/v{{site.data.project.latest_release}} v{{site.data.project.latest_release}}
+pip install --upgrade toree
 </pre>
 
 ### Previous Releases

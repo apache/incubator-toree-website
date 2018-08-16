@@ -23,8 +23,8 @@ incubator_slash_name: incubator/toree
 description: Toree is a kernel for the Jupyter Notebook platform providing interactively access to Apache Spark.
 
 download: /download
-latest_release: 0.1.0-incubating
-pip_latest_release: 0.1.0
+latest_release: 0.2.0-incubating
+pip_latest_release: 0.2.0
 
 dev_list: dev@toree.incubator.apache.org
 dev_list_subscribe: dev-subscribe@toree.incubator.apache.org
