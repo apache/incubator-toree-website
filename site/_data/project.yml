@@ -51,10 +51,10 @@ jira: TOREE
 
 github_project_name: incubator-toree
 
-source_repository: https://git-wip-us.apache.org/repos/asf/incubator-toree.git
+source_repository: https://gitbox.apache.org/repos/asf/incubator-toree.git
 source_repository_mirror: https://github.com/apache/incubator-toree
 
-website_repository: https://git-wip-us.apache.org/repos/asf/incubator-toree-website.git
+website_repository: https://gitbox.apache.org/repos/asf/incubator-toree-website.git
 website_repository_mirror: https://github.com/apache/incubator-toree-website
 
 podling: true
