@@ -38,7 +38,7 @@ your own project.
 ```
 1. cd site
 2. svn co https://svn.apache.org/repos/asf/foo/site target
-3. sudo apt-get install rubygems ruby2.1-dev zlib1g-dev
+3. sudo apt-get install ruby-full build-essential zlib1g-dev
 4. sudo gem install bundler github-pages jekyll
 5. bundle install
 ```
