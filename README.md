@@ -22,7 +22,7 @@ limitations under the License.
 This project contains a template web site that aims to follow all the various required
 Apache Website Policies.
 
-This template was generated using [Jekyll](https://jekyllrb.com/).
+This template was generated using [Jekyll](https://jekyllrb.com/) 2.4.0.
 
 To use it, copy the `site` directory into your project.  You must also
 include licensing information from the `LICENSE` and `NOTICE` files in
@@ -60,7 +60,7 @@ Before opening a pull request, you can preview your contributions by
 running from within the directory:
 
 ```
-1. bundle exec jekyll serve
+1. bundle exec jekyll serve --watch
 2. Open [http://localhost:4000](http://localhost:4000)
 ```
 
