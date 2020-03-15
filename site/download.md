@@ -43,21 +43,21 @@ limitations under the License.
     <tbody>
         <tr>
             <td>{{ site.data.project.name }} {{site.data.project.latest_release}} (tar.gz)</td>
-            <td><a href="http://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz">tar.gz</a></td>
-            <td><a href="http://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz.sha512">SHA-512</a></td>
-            <td><a href="http://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz.asc">ASC</a></td>
+            <td><a href="https://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz">tar.gz</a></td>
+            <td><a href="https://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz.sha512">SHA-512</a></td>
+            <td><a href="https://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz.asc">ASC</a></td>
         </tr>
         <tr>
             <td>{{ site.data.project.name }} {{site.data.project.latest_release}} (pip tar.gz)</td>
-            <td><a href="http://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz">tar.gz</a></td>
-            <td><a href="http://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz.sha512">SHA-512</a></td>
-            <td><a href="http://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz.asc">ASC</a></td>
+            <td><a href="https://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz">tar.gz</a></td>
+            <td><a href="https://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz.sha512">SHA-512</a></td>
+            <td><a href="https://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz.asc">ASC</a></td>
         </tr>
         <tr>
             <td>{{ site.data.project.name }} {{site.data.project.latest_release}} (source tar.gz)</td>
-            <td><a href="http://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz">tar.gz</a></td>
-            <td><a href="http://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz.sha512">SHA-512</a></td>
-            <td><a href="http://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz.asc">ASC</a></td>
+            <td><a href="https://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz">tar.gz</a></td>
+            <td><a href="https://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz.sha512">SHA-512</a></td>
+            <td><a href="https://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz.asc">ASC</a></td>
         </tr>
         <!--tr>
             <td>Release Notes</td>
@@ -77,22 +77,22 @@ pip install --upgrade toree
 
 ### Previous Releases
 
-All previous releases of {{ site.data.project.name }} can be found in the [archives](http://archive.apache.org/dist/incubator/{{site.data.project.unix_name}}/).
+All previous releases of {{ site.data.project.name }} can be found in the [archives](https://archive.apache.org/dist/incubator/{{site.data.project.unix_name}}/).
 
 ## Verifying a Release
 
-Instructions for checking hashes and signatures is indicated on the [Verifying Apache Software Foundation Releases](http://www.apache.org/info/verification.html) page.
+Instructions for checking hashes and signatures is indicated on the [Verifying Apache Software Foundation Releases](https://www.apache.org/info/verification.html) page.
 
 Choose a source distribution in either *tar* or *zip* format,
-and [verify](http://www.apache.org/dyn/closer.cgi#verify)
+and [verify](https://www.apache.org/dyn/closer.cgi#verify)
 using the corresponding *pgp* signature (using the committer file in
-[KEYS](http://downloads.apache.org/incubator/{{ site.data.project.unix_name }}/KEYS)).
+[KEYS](https://downloads.apache.org/incubator/{{ site.data.project.unix_name }}/KEYS)).
 If you cannot do that, the *md5* hash file may be used to check that the
 download has completed OK.
 
 For fast downloads, current source distributions are hosted on mirror servers;
 older source distributions are in the
-[archive](http://archive.apache.org/dist/incubator/{{ site.data.project.unix_name }}/).
+[archive](https://archive.apache.org/dist/incubator/{{ site.data.project.unix_name }}/).
 If a download from a mirror fails, retry, and the second download will likely
 succeed.
 
