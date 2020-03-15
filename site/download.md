@@ -44,20 +44,20 @@ limitations under the License.
         <tr>
             <td>{{ site.data.project.name }} {{site.data.project.latest_release}} (tar.gz)</td>
             <td><a href="http://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz">tar.gz</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz.sha512">SHA-512</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz.asc">ASC</a></td>
+            <td><a href="http://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz.sha512">SHA-512</a></td>
+            <td><a href="http://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-bin.tar.gz.asc">ASC</a></td>
         </tr>
         <tr>
             <td>{{ site.data.project.name }} {{site.data.project.latest_release}} (pip tar.gz)</td>
             <td><a href="http://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz">tar.gz</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz.sha512">SHA-512</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz.asc">ASC</a></td>
+            <td><a href="http://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz.sha512">SHA-512</a></td>
+            <td><a href="http://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree-pip/toree-{{site.data.project.pip_latest_release}}.tar.gz.asc">ASC</a></td>
         </tr>
         <tr>
             <td>{{ site.data.project.name }} {{site.data.project.latest_release}} (source tar.gz)</td>
             <td><a href="http://www.apache.org/dyn/closer.lua/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz">tar.gz</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz.sha512">SHA-512</a></td>
-            <td><a href="http://www.apache.org/dist/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz.asc">ASC</a></td>
+            <td><a href="http://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz.sha512">SHA-512</a></td>
+            <td><a href="http://downloads.apache.org/incubator/{{site.data.project.unix_name}}/{{site.data.project.latest_release}}/toree/toree-{{site.data.project.latest_release}}-src.tar.gz.asc">ASC</a></td>
         </tr>
         <!--tr>
             <td>Release Notes</td>
@@ -86,7 +86,7 @@ Instructions for checking hashes and signatures is indicated on the [Verifying A
 Choose a source distribution in either *tar* or *zip* format,
 and [verify](http://www.apache.org/dyn/closer.cgi#verify)
 using the corresponding *pgp* signature (using the committer file in
-[KEYS](http://www.apache.org/dist/incubator/{{ site.data.project.unix_name }}/KEYS)).
+[KEYS](http://downloads.apache.org/incubator/{{ site.data.project.unix_name }}/KEYS)).
 If you cannot do that, the *md5* hash file may be used to check that the
 download has completed OK.
 
@@ -97,4 +97,4 @@ If a download from a mirror fails, retry, and the second download will likely
 succeed.
 
 For security, hash and signature files are always hosted at
-[Apache](https://www.apache.org/dist/incubator/{{ site.data.project.unix_name }}/).
+[Apache](https://downloads.apache.org/incubator/{{ site.data.project.unix_name }}/).
