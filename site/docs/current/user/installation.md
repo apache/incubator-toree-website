@@ -136,7 +136,7 @@ There are two way of setting these configuration options.
 The first is at install time with the `--toree_opts` command line option.
 
 ```
-jupyter toree instal --toree_opts='--nosparkcontext'
+jupyter toree install --toree_opts='--nosparkcontext'
 ```
 
 The second option is configured at run time through the `TOREE_OPTS` environment variable.
