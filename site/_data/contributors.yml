@@ -30,6 +30,12 @@
   role: PMC
   org: Inpher Inc
 
+- name: Kevin Bates
+  apacheId: kbates
+  githubId: kevin-bates
+  role: PMC
+  org: IBM
+
 - name: Julien Le Dem
   apacheId: julien
   githubId: julienledem
