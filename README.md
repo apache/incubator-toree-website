@@ -17,10 +17,10 @@ limitations under the License.
 {% endcomment %}
 -->
 
-# Apache Website Template
+# Apache Toree Website
 
-This project contains a template web site that aims to follow all the various required
-Apache Website Policies.
+This project is used to generate the [Apache Toree](https://toree.apache.org) website
+and is based on the [Apache Website Template](https://github.com/apache/apache-website-template)
 
 This template was generated using [Jekyll](https://jekyllrb.com/) 2.4.0.
 
@@ -30,17 +30,16 @@ your own project.
 
 # How to deploy your project's web site
 
-(In the following instructions we assume that your project is called
-'Apache Foo'; search and replace with your actual project name.)
-
 ## Setup
 
 ```
 1. cd site
-2. svn co https://svn.apache.org/repos/asf/foo/site target
-3. sudo apt-get install ruby-full build-essential zlib1g-dev
-4. sudo gem install bundler github-pages jekyll
-5. bundle install
+2. svn co https://svn.apache.org/repos/asf/incubator/toree/site target
+3. Jekyll requires ruby, more details on https://jekyllrb.com/docs/installation
+4. gem install --user-install bundler github-pages jekyll
+5. add local .gem directory to path
+5.1 echo 'export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"' >> ~/.bash_profile
+6. bundle install
 ```
 
 ## Add javadoc
@@ -75,7 +74,7 @@ running from within the directory:
 
 Within a few minutes, svnpubsub should kick in and you'll be able to
 see the results at
-[foo.apache.org](https://foo.apache.org/).
+[foo.apache.org](https://toree.apache.org/).
 
 ## Adding contributors
 
