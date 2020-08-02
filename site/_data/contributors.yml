@@ -66,6 +66,12 @@
   org: Adobe
   role: PMC
 
+- name: Ryan Blue
+  apacheId: blue
+  githubId: rdblue
+  role: PMC, Mentor
+  org: Netflix
+
 - name: Robert Senkbeil
   apacheId: chipsenkbeil
   githubId: chipsenkbeil
