@@ -60,12 +60,6 @@
   org: Adobe
   role: PMC
 
-- name: Reynold Xin
-  apacheId: rxin
-  githubId: rxin
-  org: Databricks
-  role: Mentor
-
 - name: Robert Senkbeil
   apacheId: chipsenkbeil
   githubId: chipsenkbeil
