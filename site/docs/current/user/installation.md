@@ -87,7 +87,7 @@ setting configuration options for Spark.
 The first is at install time with the `--spark_opts` command line option.
 
 ```
-jupyter toree instal --spark_opts='--master=local[4]'
+jupyter toree install --spark_opts='--master=local[4]'
 ```
 
 The second option is configured at run time through the `SPARK_OPTS` environment variable.
