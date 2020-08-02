@@ -24,12 +24,6 @@
   role: PMC
   org: Convey Inc
 
-- name: Hitesh Shah
-  apacheId: hitesh
-  githubId: hiteshs
-  role: Mentor
-  org: Hortonworks
-
 - name: Jakob Odersky
   apacheId: jodersky
   githubId: jodersky
