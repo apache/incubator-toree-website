@@ -27,6 +27,8 @@ limitations under the License.
 
 {% include JB/setup %}
 
+# Contributing to {{ site.data.project.name }}
+
 - Requirements
 - Makefile
     - Build

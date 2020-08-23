@@ -27,6 +27,8 @@ limitations under the License.
 
 {% include JB/setup %}
 
+# Extending to {{ site.data.project.name }}
+
 - What is pluggable
 - Creating a magic
 
