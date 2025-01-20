@@ -3,8 +3,6 @@
 {% case site.analytics_provider %}
 {% when "google_classic" %}
   {% include JB/analytics-providers/google-classic %}
-{% when "google_universal" %}
-  {% include JB/analytics-providers/google-universal %}
 {% when "getclicky" %}
   {% include JB/analytics-providers/getclicky %}
 {% when "mixpanel" %}
