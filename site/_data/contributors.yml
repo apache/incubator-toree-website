@@ -42,12 +42,6 @@
   role: PMC
   org: IBM
 
-- name: Julien Le Dem
-  apacheId: julien
-  githubId: julienledem
-  role: Mentor
-  org: Datakin
-
 - name: Leugim Bustelo
   apacheId: lbustelo
   githubId: lbustelo
