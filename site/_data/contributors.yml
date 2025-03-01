@@ -21,37 +21,37 @@
 - name: Corey Stubbs
   apacheId: cstubbs
   githubId: Lull3rSkat3r
-  role: PMC
   org: Convey Inc
+  role: PMC
 
 - name: Cheng Pan
   apacheId: chengpan
   githubId: pan3793
-  role: PMC
   org: NetEase
+  role: PMC
 
 - name: Jakob Odersky
   apacheId: jodersky
   githubId: jodersky
-  role: PMC
   org: Inpher Inc
+  role: PMC
 
 - name: Kevin Bates
   apacheId: kbates
   githubId: kevin-bates
+  org: Veritone
   role: PMC
-  org: IBM
 
 - name: Leugim Bustelo
   apacheId: lbustelo
   githubId: lbustelo
-  role: PMC
   org: Talroo
+  role: PMC
 
 - name: Luciano Resende
   apacheId: lresende
   githubId: lresende
-  org: IBM
+  org: Apple
   role: PMC and Mentor
 
 - name: Marius van Niekerk
@@ -69,14 +69,14 @@
 - name: Ryan Blue
   apacheId: blue
   githubId: rdblue
+  org: Databricks
   role: PMC, Mentor
-  org: Netflix
 
 - name: Robert Senkbeil
   apacheId: chipsenkbeil
   githubId: chipsenkbeil
-  role: PMC
   org: Facebook
+  role: PMC  
 
 - name: Sean Welleck
   apacheId: TBD
