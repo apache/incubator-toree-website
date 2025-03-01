@@ -24,6 +24,12 @@
   role: PMC
   org: Convey Inc
 
+- name: Cheng Pan
+  apacheId: chengpan
+  githubId: pan3793
+  role: PMC
+  org: NetEase
+
 - name: Jakob Odersky
   apacheId: jodersky
   githubId: jodersky
