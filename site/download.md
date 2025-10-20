@@ -72,7 +72,7 @@ limitations under the License.
 You can also install Apache Toree directly from PyPI:
 
 <pre>
-pip install --upgrade toree
+pip install --upgrade apache-toree
 </pre>
 
 ### Previous Releases

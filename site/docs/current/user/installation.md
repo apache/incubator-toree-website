@@ -38,7 +38,7 @@ An Apache Spark distribution is required to be installed before installing Apach
 The quickest way to install Apache Toree is through the toree pip package.
 
 ```
-pip install toree
+pip install apache-toree
 ```
 
 This will install a jupyter application called `toree`, which can be used to install and configure different Apache Toree kernels.

@@ -41,7 +41,7 @@ This requires you to have a distribution of [Apache Spark][1] downloaded to the 
 following commands will install Apache Toree.
 
 ```
-pip install --upgrade toree
+pip install --upgrade apache-toree
 jupyter toree install --spark_home=/usr/local/bin/apache-spark/
 ```
 
