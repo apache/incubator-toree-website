@@ -74,7 +74,7 @@ running from within the directory:
 
 Within a few minutes, svnpubsub should kick in and you'll be able to
 see the results at
-[foo.apache.org](https://toree.apache.org/).
+[toree.apache.org](https://toree.apache.org/).
 
 ## Adding contributors
 
