@@ -15,7 +15,7 @@
 #
 # Apache Project configurations
 #
-name: Apache Toree
+name: Apache Toree (Incubating)
 short_name: Toree
 unix_name: toree
 incubator_name: incubator-toree
