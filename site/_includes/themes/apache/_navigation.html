@@ -9,7 +9,7 @@
           </button>
           <a class="navbar-brand" href="{{ BASE_PATH }}">
               <img src="/assets/themes/apache/img/logo.png" width="50">
-              {{ site.data.project.name }}
+              {{ site.data.project.name | replace: " (Incubating)", " <small>(Incubating)</small>" }}
           </a>
         </div>
 

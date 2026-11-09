@@ -415,3 +415,16 @@ and (max-width : 1024px) {
         width: 700px;
     }
 }
+
+/* The navbar container is capped at 970px (the 1200px Bootstrap breakpoint
+   is disabled), so tighten the brand suffix and menu spacing to keep the
+   right-side menu on the same line as "Apache Toree (Incubating)". */
+@media only screen and (min-width : 1025px) {
+    .navbar-brand small {
+        font-size: 50%;
+    }
+    .navbar-nav > li > a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
